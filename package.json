@@ -1,0 +1,17 @@
+{
+  "name": "MERN-Boileplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SecretariatV/MERN-Boileplate.git",
+  "author": "SecretariatV <oliver.b25.f@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node backend/server.ts",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build",
+    "install": "cd backend && yarn && cd ../frontend && yarn"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
